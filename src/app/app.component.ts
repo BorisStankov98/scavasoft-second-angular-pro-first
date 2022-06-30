@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Ultimate-Angular-Pro';
+  rememberMe:boolean = false;
+
+  handleChecked(event:boolean){
+    this.rememberMe = event
+    console.log(this.rememberMe)
+  }
 }

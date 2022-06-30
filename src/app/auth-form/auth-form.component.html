@@ -9,6 +9,10 @@
                 Password
                 <input type="password" name="email">
             </label>
+            <ng-content select="app-remember-me"></ng-content>
+            <auth-message [style.display]="(showMessage ? 'inherit' : 'none')">
+
+            </auth-message>
             <ng-content select="button"></ng-content>
     </form>
 </div>

@@ -1,9 +1,7 @@
 <app-auth-form>
-  <h3> Create account </h3>
-  <button type="submit"> Join us</button>
-</app-auth-form>
-
-<app-auth-form>
   <h3> Login </h3>
   <button type="submit"> Login </button>
+  <app-remember-me
+  (checked)="handleChecked($event)"
+  ></app-remember-me>
 </app-auth-form>

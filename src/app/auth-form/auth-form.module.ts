@@ -1,14 +1,21 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { AuthFormComponent } from './auth-form.component'
+import { RememberMeComponent } from "./auth-remember.component";
+import { AuthMessageComponent } from "./auth-message.component";
 @NgModule({
     declarations: [
-        AuthFormComponent
+        AuthFormComponent,
+        RememberMeComponent,
+        AuthMessageComponent
     ],
     imports: [
+        CommonModule
     ],
     providers: [],
     exports:[
-        AuthFormComponent
+        AuthFormComponent,
+        RememberMeComponent,
     ]
   })
   export class AuthFormModule { }
